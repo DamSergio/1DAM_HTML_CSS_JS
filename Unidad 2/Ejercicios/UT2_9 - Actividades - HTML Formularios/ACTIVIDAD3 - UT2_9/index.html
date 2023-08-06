@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulario de prueba de HTML5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="php/insertar_cv.html" method="get">
+            <label for="nombre">Nombre:</label> <input type="text" name="tx_nombre" id="nombre" value="" required><br><br>
+            <label for="email">Correo electronico:</label> <input type="email" name="em_email" id="email" value="" required><br><br>
+            <label for="url">URL:</label> <input type="url" name="url_url" placeholder="Escribe la URL de tu pagina web personal" id="url" value=""><br><br>
+            <label for="fecha">Fecha:</label> <input type="date" name="dt_fecha" id="fecha"><br><br>
+            <label for="tiempo">Tiempo:</label> <input type="time" name="tm_tiempo" id="tiempo"><br><br>
+            <label for="fech_hor">Fecha y hora:</label> <input type="datetime-local" name="tx_fech_hor" id="fech_hor"><br><br>
+            <label for="mes">Mes:</label> <input type="month" name="mt_mes" id="mes" value=""> <br><br>
+            <label for="semana">Semana:</label> <input type="week" name="wk_semana" id="semana" value=""> <br><br>
+            <label for="num">Numero (min -10, max 10):</label> <input type="number" name="num_numer" id="num" min="-10" max="10" value="0"> <br><br>
+            <label for="tlf">Telefono:</label> <input type="tel" name="tl_tlf" id="tlf"> <br><br>
+            <label for="busq">Termino de busqueda:</label> <input type="search" name="srch_busq" id="busq"> <br><br>
+            <label for="color">Color favorito:</label> <input type="color" name="cl_color" id="color"> <br><br>
+            <input type="submit" value="enviar">
+        </form>
+    </body>
+</html>

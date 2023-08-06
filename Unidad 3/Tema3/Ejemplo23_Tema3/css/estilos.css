@@ -1,0 +1,15 @@
+.interlineado1 {
+  line-height: 1.2;
+  font-size: 1em;
+}
+
+.interlineado2 {
+  line-height: 1.2em;
+  font-size: 1.5em;
+}
+
+.interlineado3 {
+  line-height: 120%;
+  font-size: 2em;
+}
+

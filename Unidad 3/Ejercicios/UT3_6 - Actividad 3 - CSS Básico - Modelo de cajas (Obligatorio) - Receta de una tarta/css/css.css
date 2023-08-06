@@ -1,0 +1,49 @@
+/* Fuente de textp */
+@font-face{  
+	font-family:candy;
+	src:url("../fuentes/CandyCane.ttf");
+}
+/* Estilos del body */
+body{
+    background-image:url("../imagenes/fondo.jpg");
+    font-weight: bold;
+    font-style: italic;
+    color: lightslategrey;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: tahoma;
+}
+/* Estilos del header */
+header{
+    background: pink;
+    margin: 2% 10%;
+}
+header h1{
+    font-family: candy;
+    padding: 10px 0px;
+    font-size: 4.5em;
+}
+/* Estilos del div receta */
+.receta{
+    background: pink;
+    padding: 1em;
+    margin: 2% 10%;
+}
+img{
+    height: 500px;
+    width: 95%;
+    margin: 25px 10px 5px 10px;
+}
+div h2{
+    margin: 5px;
+}
+/* Estilos footer */
+footer{
+    text-align: right;
+    background: pink;
+    margin: 2% 10%;
+    padding: 2px;
+}
+footer p{
+    margin: 2px 10px;
+}

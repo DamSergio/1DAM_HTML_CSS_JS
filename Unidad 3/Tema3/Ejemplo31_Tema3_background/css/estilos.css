@@ -1,0 +1,33 @@
+body { 
+    background-color: #CCC; 
+    background-image: url("../img/fondo.jpg")
+}
+
+
+/*body{
+    background-image: url("../img/fondo.jpg");
+}*/
+
+.caja1 {
+    width: 30%;
+    height: 100%;
+    border: 15px dotted gray;
+    display: inline-block;
+    background: url("../img/imagen1.jpg");
+    background-origin: content-box;
+    background-size: 100%;
+    padding: 50px;
+   }
+
+   .caja2 {
+    width: 30%;
+    height: 100%;
+    border: 15px dotted gray;
+    display: inline-block;
+    background: url("../img/imagen1.jpg");
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 50px;
+   }
+   

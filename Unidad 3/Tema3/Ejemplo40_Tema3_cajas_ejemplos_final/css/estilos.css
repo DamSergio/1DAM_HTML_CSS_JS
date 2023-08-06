@@ -1,0 +1,25 @@
+
+header{
+  border:1px solid #CCC;
+  padding:2%;
+}
+a{
+  display:block;
+  color:#000;
+  margin-bottom:0.5%;
+  
+}
+
+div a{
+     display:inline;
+     background-color: aqua;
+     color:#000;
+}
+
+footer{
+  margin-top:5%;
+  background-color: #DDD;
+  border:2px solid red;
+  padding:1%;
+  font-weight: bolder;
+}

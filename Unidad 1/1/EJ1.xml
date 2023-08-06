@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<examenes>
+    <materia>
+        <nombre>Lenguajes de marcas</nombre>
+        <aprobados>15</aprobados>
+        <suspensos>10</suspensos>
+        <unidades>4</unidades>
+    </materia>
+    <materia>
+        <nombre>Sistemas operativos</nombre>
+        <aprobados>5</aprobados>
+        <suspensos>20</suspensos>
+        <unidades>10</unidades>
+    </materia>
+    <materia>
+        <nombre>Programacion</nombre>
+        <aprobados>20</aprobados>
+        <suspensos>5</suspensos>
+        <unidades>7</unidades>
+    </materia>
+</examenes>

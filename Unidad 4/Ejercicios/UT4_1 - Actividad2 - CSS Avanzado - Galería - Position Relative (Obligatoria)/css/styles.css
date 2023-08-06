@@ -1,0 +1,101 @@
+/*New font*/
+@font-face {
+    font-family: lcd;
+    src: url("../fonts/lcd.TTF");
+}
+* {
+    box-sizing: border-box; /*calculates the size starting at the border*/
+    margin: 0; /*removes all margins*/
+    padding: 0; /*removes all paddings*/
+  }
+/*Body styles*/
+body{
+    background-color: rgb(60, 60, 60); /*Color of the background*/
+    font-family: lcd; /*font*/
+    font-variant: small-caps; /*Lower caps as upper caps*/
+    color: antiquewhite; /*Font color*/
+}
+/*Cool background*/
+body>div{
+    background: url(../images/fondo1.jpg); /*Div background*/
+    border: 3px solid rgb(120, 120, 120); /*Border*/
+    border-radius: 5px; /*Round corners*/
+    height: 100%;
+    margin: 20px 15%; /*Top/bottom 20px, sides 15%*/
+}
+/*Header styles*/
+header{
+    text-align: center; /*center text*/
+    color: yellow; /*font color*/
+    font-size: 1.5em; /*font size 1.5 times*/
+    background-color: rgb(60, 60, 60); /*background color*/
+    margin: 1% 1% 0.5%; /*top 1%, sides 1%, bottom 0.5%*/
+    border: 3px outset rgb(120, 120, 120); /*Border*/
+}
+header h1{
+    margin: 0.5%;
+}
+/*Div's styles*/
+div{
+    overflow: hidden; /*Hiddes elements outside of the div*/
+}
+div.contenedor>div{
+    margin: 0.5%;
+    height: auto;
+}
+div>div>div{
+    background-color: rgb(60, 60, 60);
+    display: inline-block; /*Makes the div behave as a line element*/
+    width: 30%; /*30% each div*/
+    margin: 1% 0.5% 1% 1%;
+    padding: 1% 1% 0% 1%;
+    border: 3px outset rgb(120, 120, 120);
+    text-align: center;
+    position: relative; /*Position relative to the father*/
+}
+div div div img{
+    width: 100%; /*img width*/
+    height: 160px; /*img height*/
+}
+p{
+    text-align: right; /*Align text at rigth side*/
+}
+/*Animals*/
+
+.ave{
+    top: 15%; /*15% from the top*/
+    border-top: none;
+}
+.rino{
+    top: 20px; /*20px from the top*/
+    margin: 1% 0.5%;
+}
+.snake{
+    top: 15%; /*15% from the top*/
+    margin: 1% 0.5%;
+    border-top: none;
+}
+.mono{
+    top: 15px; /*15px from the top*/
+}
+.cat{
+    top: 15px; /*15px from the top*/
+    left: 40px; /*40px from the left*/
+    margin: 1% 0.5%;
+}
+.eagle{
+    top: 15px; /*15px from the top*/
+    left: 40px; /*40px from the left*/
+    margin: 1% 0.5%;
+}
+.lion{
+    top: 25px; /*25px from the top*/
+}
+.dog{
+    top: 10px; /*10px from the top*/
+    margin: 1% 0.5%;
+}
+.giraf{
+    top: 25px; /*25px from the top*/
+    margin: 1% 0.5%;
+}

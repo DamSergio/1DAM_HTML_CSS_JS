@@ -1,0 +1,4 @@
+Haz la web de la imagen "pantallazo1.jpg".
+Utiliza sólo las imágenes que necesites de la carpeta de "imágenes".
+
+ 

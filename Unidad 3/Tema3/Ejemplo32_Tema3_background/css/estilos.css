@@ -1,0 +1,10 @@
+/* Color e imagen de fondo de la página mediante una propiedad shorthand */
+body { background: #222d2d url(../img/fondo.jpg) repeat-x 0 0; }
+
+/* La propiedad shorthand anterior es equivalente a las siguientes propiedades */
+/*body {
+ background-color: #222d2d;
+ background-image: url("../img/fondo.jpg");
+ background-repeat: repeat-x;
+ background-position: 0 0;
+}*/

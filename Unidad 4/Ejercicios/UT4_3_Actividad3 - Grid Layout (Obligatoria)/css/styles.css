@@ -1,0 +1,276 @@
+/*Every element*/
+* {
+    box-sizing: border-box; /*calculates the size starting at the border*/
+    margin: 0; /*removes all margins*/
+    padding: 0; /*removes all paddings*/
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    color: black;
+}
+nav a[href="#"]{
+    text-decoration: underline;
+}
+div>a{
+    color: white;
+}
+/*Body*/
+html {
+    height: 150%;
+}
+body{
+    height: 100%;
+    font-family: sans-serif; 
+}
+
+/*Header*/
+header{
+    /*border: 1px solid red;*/
+    display: flex;
+    margin: 1% 15% 2.5%;
+}
+header>a>img{
+    height: 100%;
+    border-radius: 10%;
+}
+header>nav{
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1%;
+    font-size: 1.2em;
+}
+header>nav>*{
+    margin: 2% 0;
+}
+header>nav>p{
+    font-weight: bold;
+}
+/*Main*/
+div.main{
+    /*border: 1px solid blue;*/
+    height: 65%;
+    min-height: 500px;
+    margin: 0 15%;
+
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 2fr; /*3 columns*/
+    grid-template-rows: 1fr 1fr 1fr; /*3 rows*/
+    grid-template-areas: 
+    "tl tc tr1"
+    "bl bc tr1"
+    "foot foot foot";
+}
+div.main>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 20px;
+    font-size: 1.5em;
+}
+div.main>div>a{
+    margin-top: 5px;
+}
+div.tl{
+    grid-area: tl;
+    background: url(../images/portfolio-1.jpg) 50%;
+    background-size: cover;
+}
+div.tc{
+    grid-area: tc;
+    background: url(../images/portfolio-2.jpg) 50%;
+    background-size: cover;
+}
+div.bl{
+    grid-area: bl;
+    background: url(../images/portfolio-4.jpg) 50%;
+    background-size: cover;
+}
+div.bc{
+    grid-area: bc;
+    background: url(../images/portfolio-5.jpg) 50%;
+    background-size: cover;
+}
+div.tr{
+    grid-area: tr1;
+    background: url(../images/portfolio-3.jpg) 55%;
+    background-size: cover;
+}
+div.bot{
+    /*border: 1px solid red;*/
+    background: url(../images/portfolio-6.jpg) 50%;
+    background-size: cover;
+    grid-area: foot;
+}
+/*Footer*/
+footer{
+    /*border: 1px solid green;*/
+    margin: 2.5% 15% 0;
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+footer>*{
+    font-weight: bold;
+    margin: auto 2%;
+}
+footer img{
+    width: 100%;
+}
+/*Mobile version*/
+@media screen and (max-width: 700px) { /*Only when the screen is 700px or smaller*/
+    header{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    header img{
+        display: none;
+    }
+    header>nav{
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    div.main{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    div.main>div{
+        width: 100%;
+        height: 275px;
+    }
+}
+/*About*/
+html.about{
+    height: 100%;
+}
+div.about{
+    height: 45%;
+    background: lightgray;
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    min-height: 800px;
+    min-width: 600px;
+}
+div.about>h2{
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+div.about>p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 1%;
+}
+/*Work*/
+div.work{
+    min-width: 730px;
+    height: 70%;
+    min-height: 1000px;
+    background: lightgrey;
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.work>h2{
+    font-weight: normal;
+    font-size: 2em;
+}
+div.grid{
+    /*border: 1px solid red;*/
+    height: 80%;
+    margin-top: 2.5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*3 columns*/
+    grid-template-rows: 1fr 1fr; /*2 rows*/
+    gap: 5px;
+    grid-template-areas: 
+    "tl tc tr"
+    "bl bc br";
+}
+/*Grid*/
+/*div.grid>div{
+    border: 1px solid black;
+}*/
+div.grid>div>img{
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 1%;
+}
+div.grid>div>p{
+    line-height: 1.5em;
+}
+div.p1{
+    grid-area: tl;
+}
+div.p2{
+    grid-area: tc;
+}
+div.p3{
+    grid-area: tr;
+}
+div.p4{
+    grid-area: bl;
+}
+div.p5{
+    grid-area: bc;
+}
+div.p6{
+    grid-area: br;
+}
+/*Contact*/
+div.contact{
+    width: 100%;
+    height: 80%;
+    padding: 5% 40% 5% 15%;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.contact>h2{
+    font-size: 2em;
+    font-weight: 100;
+}
+div.contact>form{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+div.contact>form>input{
+    height: 40px;
+    font-size: 1.5em;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+div.contact>form>label{
+    font-size: .9em;
+    margin-bottom: .3%;
+}
+div.contact>form>textarea{
+    height: 70%;
+    font-size: 1.5em;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+div.contact>form>input[type="submit"]{
+    color: white;
+    font-weight: bold;
+    background: black;
+    font-size: 1em;
+}
+html.contact{
+    height: 130%;
+}

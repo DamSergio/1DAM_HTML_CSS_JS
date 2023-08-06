@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title> Ejercicios DAM1 Propiedad padding </title>
+		<link rel="stylesheet" href="../css/estilos.css">
+	
+		<style>
+			p{
+				background-color:orange;
+				border:1px solid white;
+			}
+			p.primero{
+				background-color:orange;
+				border:1px solid white;
+				padding-top:0px;
+				padding-right:50px;
+				padding-bottom:25px;
+				padding-left:0px;
+					
+				/*padding:0px 0px 100px 50px;*/
+			}
+			p.segundo{
+				background-color:orange;
+				border:1px solid white;
+				padding-top:50px;
+				padding-bottom:25px;
+				padding-right:50px;
+				padding-left:50px;
+			}
+			p.tercero{
+				background-color:orange;
+				border:1px solid white;
+				padding-top:75px;
+				padding-bottom:100px;
+				padding-right:100px;
+				padding-left:125px;
+			}
+		  </style>
+	</head>
+
+	<body>
+		<header class="general">
+			<h1 class=encabezado>
+				CSS padding.
+			</h1>
+		</header>
+
+		<section class="principal">
+			<p>Este es un parrafo normal.</p>
+			<p class="primero">Este es un parrafo padding top=0px, padding bottom=25px, padding right=50px y padding left=0px</p>
+			<p class="segundo">Este es un parrafo padding top=50px, padding bottom=25px, padding right=50px y padding left=50px</p>
+			<p class="tercero">Este es un parrafo padding top=75px, padding bottom=100px, padding right=100px y padding left=125px</p>
+		</section>	
+		<a href="../index.html">Volver</a>
+
+		<footer>
+			<p>
+				Ejemplos de bordes, márgenes y rellenos. 1º de DAM. &copy; 2022/2023
+			</p>
+		</footer>
+	</body>
+</html>

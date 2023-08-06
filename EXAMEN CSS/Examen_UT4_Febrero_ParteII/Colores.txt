@@ -1,0 +1,2 @@
+Azul: #004080
+Amarillo: #FF9500

@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+  background-color: #000000;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+div {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.261);
+  border-radius: 5px;
+}
+
+.static,
+.relative,
+.absolute,
+.fixed,
+.sticky {
+  padding: 1rem;
+}
+
+.parent {
+  background-color: #555555;
+}
+
+.static {
+  background-color: #dddddd;
+}
+
+.relative {
+  background-color: #81c476;
+}
+
+.absolute {
+  background-color: #fc9191;
+}
+
+.fixed {
+  background-color: #a8d5e2;
+}
+
+.sticky {
+  background-color: #e1e1ac;
+}
+
+
+/* CSS Position */
+
+.static {
+  
+}
+
+.relative {
+  
+}
+
+.parent {
+  
+}
+
+.absolute {
+  position:absolute;
+  top:0;
+  left:0;
+
+}
+
+.fixed {
+  
+}
+
+.sticky {
+  
+}

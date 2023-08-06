@@ -1,0 +1,37 @@
+div {
+    display: inline;
+    float: left;
+    margin: .1em;
+    padding: .3em;
+    border: 2px solid #555;
+  }
+
+  .hidden{
+    overflow:hidden;
+  }
+
+  .scroll{
+    overflow:scroll;
+  }
+
+  .caja1{
+    background-color: mediumslateblue ;
+    color:white;
+  }
+ 
+  .caja2{
+    background-color: orange ;
+    color:white;
+  }
+
+  .caja3{
+    background-color: mediumaquamarine ;
+    color:white;
+  }
+
+  .none{
+    display:none;
+  }
+  .hidden{
+    visibility: hidden;
+  }

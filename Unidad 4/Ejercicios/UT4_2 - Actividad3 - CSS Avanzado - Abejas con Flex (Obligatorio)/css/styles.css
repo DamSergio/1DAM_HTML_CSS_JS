@@ -1,0 +1,170 @@
+/*Styles*/
+* {
+    box-sizing: border-box; /*calculates the size starting at the border*/
+    margin: 0; /*removes all margins*/
+    padding: 0; /*removes all paddings*/
+}
+body{
+    background: url("../images/img01.jpg");
+    font-family: arial;
+    min-width: 1000px;
+}
+h2{
+    background: url(../images/img03.jpg);
+    font-variant: small-caps;
+    font-weight: 100;
+    font-size: 1.7em;
+    padding: 10px 15px;
+    color: rgb(100, 100, 100);
+}
+img{
+    width: 100%;
+    margin-left: 1.5%;
+    margin-bottom: 2.5%;
+}
+/*Header style*/
+header{
+    background: url(../images/img02.jpg);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-variant: small-caps;
+}
+nav>a{
+    font-size: 1.2em;
+    margin: 0 1.5%;
+    text-decoration: none;
+    color: gray;
+}
+nav>a:hover{
+    color: black;
+    text-decoration: underline 2px;
+}
+/*Container style*/
+div.container{
+    margin: 0 20% 0 19%;
+    /*border: 1px solid red;*/
+}
+div.container>hr{
+    height: 3px;
+}
+/*Container's head style*/
+div.head{
+    font-variant: small-caps;
+    margin: 10px 0 5px;
+}
+div.head>h1{
+    font-weight: 100;
+    font-size: 2.2em;
+}
+div.head>input{
+    height: 20px;
+    margin-top: auto;
+    width: 25%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid grey;
+}
+div.head>input:focus{
+    border-bottom: 3px solid orange;
+    color: orange;
+}
+div.container>div{
+    display: flex; 
+    flex-flow: row; /*row like flex*/
+    justify-content: space-between; /*puts the content at the start and the end of the div*/
+}
+/*left and right divs*/
+div.sections{
+    padding: 3% 3% 0 3%;
+}
+div.sections>div>p{
+    margin: 2.5% 1.5% 2.5% 1.5%;
+    text-align: justify; /*justify the text*/
+    line-height: 1.5em; /*space between lines in the <p> tag*/
+    color: gray;
+}
+div.left{
+    width: 62.5%;
+}
+div.left>hr+p{
+    text-align: right;
+    margin: .5% 1%;
+    font-style: italic;
+    font-size: .7em;
+}
+p>a{
+    color: red;
+    text-decoration: none;
+}
+p>a:hover{ /*Only when hovered by mouse*/
+    text-decoration: underline;
+}
+p+hr{
+    margin-bottom: 8%;
+}
+div.right{
+    width: 32%;
+}
+div.right>p a{
+    font-size: .9em;
+}
+div.right>h2{
+    margin-bottom: 5%;
+}
+div.right>p+h2{
+    margin-top: 23%;
+    margin-bottom: 10%;
+}
+div.sections>div.right>a.pRight{
+   margin-left: 5%;
+   line-height: normal;
+}
+a.pRight+hr{
+    margin: 2.8% 0;
+}
+div.right>hr+h2{
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+a.pRight{
+    color: grey;
+    text-decoration: none;
+    font-size: .9em;
+}
+a.pRight:hover{
+    color: limegreen;
+    text-decoration: underline;
+}
+/*Footer styles*/
+footer{
+    background: rgb(31, 31, 31);
+    padding: 1% 17% 1% 19%;
+    color: grey;
+    display: flex;
+    justify-content: space-evenly; /*display the content evenly*/
+}
+footer>div{
+    width: 20%;
+    margin-right: 13%;
+}
+footer>div>h3{
+    font-weight: 100;
+    font-variant: small-caps;
+}
+footer>div>hr{
+   height: 1px;
+   border: none;
+   background-color: grey;
+   margin-bottom: 5%;
+}
+footer>div>a{
+   color: grey;
+   font-size: .8em;
+   margin-left: 5%;
+   text-decoration: underline;
+}
+footer>div>a:hover{
+    color: white;
+ }

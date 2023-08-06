@@ -1,0 +1,4 @@
+El color de la fuente es: #3B5998
+El color del fondo es: #D0D8E9
+
+La fuente es tahoma y el tamaño de la fuente es 0.85em

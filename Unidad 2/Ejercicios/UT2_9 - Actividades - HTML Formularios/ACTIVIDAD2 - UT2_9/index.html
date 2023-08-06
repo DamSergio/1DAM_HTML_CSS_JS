@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Actividad 2</title>
+        <meta charset="UTF-8">
+        <style>
+            textarea{
+                overflow-y:scroll;
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Informacion sobre el producto</h1>
+        <form>
+            <fieldset>
+                <legend>Datos basicos</legend>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="tx_nombre" id="nombre" size="45"><br><br>
+                <label for="desc">Descripcion</label><br>
+                <textarea id="desc" rows="6" cols="50"></textarea><br><br>
+                <label for="foto">Foto </label><input type="text" id="foto" size="15" name="tx_foto"> <input type="button" name="bt_elegit" value="Elegir..."><br><br>
+                <input type="checkbox" id="visitas" name="chk_visitas"> <label for="visitas">Añadir contador de visitas</label>
+            </fieldset>
+            <fieldset>
+                <legend>Datos economicos</legend>
+                <label for="precio">Precio </label><input type="text" id="precio" name="num_precio" size="3"> € &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="impuestos">Impuestos</label> 
+                <select id="impuestos">
+                    <option selected>4%</option>
+                    <option>7%</option>
+                    <option>16%</option>
+                    <option>25%</option>
+                </select><br><br>
+                <label for="promo">Promocion</label><br>
+                <input type="radio" id="promo" name="rd_promo" value="none" checked="checked"> Ninguno<br>
+                <input type="radio" name="rd_promo" value="transporte_gratis"> Transporte gratuito<br>
+                <input type="radio" name="rd_promo" value="5%_descuento"> Descuento 5%<br>
+            </fieldset>
+        </form>
+    </body>
+</html>

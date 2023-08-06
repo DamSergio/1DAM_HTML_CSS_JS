@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    filter: drop-shadow(1px 1px 5px gray);
+}
+
+div.container{
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+div.container > *{
+    /*height: 50px;*/
+    border-radius: 5px;
+    text-align: center;
+    padding: auto;
+    font-size: 1.5em;
+    border: none;
+}
+
+button:hover, button.equals:hover, button.reset:hover{
+    background: lightgrey;
+    cursor: pointer;
+}
+
+input.screen{
+    text-align: left;
+    padding: 0 3px;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border: 2px solid black;
+}
+
+button.reset{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: red;
+    color: white;
+}
+
+[class*="operators"]{
+    background-color: #0074D9;
+    color: white;
+}
+
+[class$="div"]{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+[class$="mult"]{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+[class$="rest"]{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+[class$="sum"]{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+button.equals{
+    grid-column: 4/5;
+    grid-row: 4/7;
+    background: lime;
+    color: white;
+}
+
+button.digits_0{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+button.digits_1{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+button.digits_2{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+button.digits_3{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+button.digits_4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+button.digits_5{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+button.digits_6{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}

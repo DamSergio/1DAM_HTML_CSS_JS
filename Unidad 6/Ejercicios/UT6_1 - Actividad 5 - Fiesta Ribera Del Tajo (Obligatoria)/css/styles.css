@@ -1,0 +1,311 @@
+@font-face {
+    font-family: coco;
+    src: url(../font/Cocogoose.otf);
+}
+
+/*Reglas generales*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    height: 3px;
+    background-color: orange;
+    border: none;
+
+    width: 2.5%;
+    margin: 10px auto;
+}
+
+/*Fin reglas generales*/
+
+/*Inicio Header*/
+
+header {
+    position: fixed;
+    background: white;
+    height: 110px;
+    width: 100%;
+    z-index: 10;
+}
+
+header > *{
+    padding: 5px 40px;
+} 
+
+header > nav {
+    background: black;
+}
+
+header > nav > a{
+    color: white;
+}
+
+header > div a{
+    color: black;
+}
+
+header img{
+    width: 60px;
+}
+
+header nav, header div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+}
+
+header a {
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/*Fin Header*/
+
+/*Inicio Espaciador*/
+
+div.spacer{
+    height: 110px;
+}
+
+/*Fin Espaciador*/
+
+/*Inicio Main*/
+
+div.main{
+    background: url(../images/fondo.png) 0% 10%;
+    background-size: cover;
+    padding: 5% 10%;
+}
+
+div.contenedor > p{
+    color: rgb(54, 54, 211);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+div.contenedor > h1{
+    color: orange;
+    font-size: 4em;
+    font-family: coco;
+}
+
+div.contenedor > div{
+    border: 5px solid white;
+    width: 60%;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+div.contenedor > div > p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+div.contenedor > h2{
+    font-size: 2.2em;
+    font-family: coco;
+}
+
+div.contenedor > h2 + p, div.contenedor > p + p{
+    color: black;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/*Fin Main*/
+
+/*Inicio Contador*/
+
+div.contador {
+    background: black;
+    text-align: center;
+    padding: 5px;
+}
+
+div.contador > p {
+    color: white;
+    font-size: 2.5em;
+}
+
+/*Fin contador*/
+
+/*Inicio Actividades*/
+
+div.actividades {
+    padding: 5% 10%;
+    background: url(../images/fill-bg.png) #272A31;
+    text-align: center;
+}
+
+div.actividades > h3 {
+    color: white;
+    margin-bottom: 1.5%;
+}
+
+div.info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+
+    margin: 50px 0;
+    padding: 10px;
+}
+
+div.info > div {
+    background: rgba(167, 167, 167, 0.158);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    padding: 40px 12px 20px;
+    font-size: .9em;
+    line-height: 1.7em;
+    transition: .2s;
+}
+
+/*div.info > div:hover {
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 5px;
+}*/
+
+div.info h4 {
+    color: rgb(228, 60, 60);
+    font-weight: normal;
+}
+
+div.info p {
+    color: white;
+}
+
+div.actividades a {
+    color: white;
+}
+
+/*Fin Actividades*/
+
+/*Inicio Participantes*/
+
+div.participantes {
+    text-align: center;
+    padding: 30px 10px 20px;
+}
+
+div.participantes span {
+    color: orange;
+    font-style: italic;
+}
+
+div.grid_participantes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    row-gap: 40px;
+
+    margin-top: 60px;
+}
+div.grid_participantes hr {
+    background: gray;
+    margin: 0 0 10px 0;
+    width: 30px;
+}
+
+div.grid_participantes > div {
+    display: flex;
+    justify-content: left;
+}
+
+div.grid_participantes > div > div {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    padding-left: 20px;
+}
+
+div.grid_participantes > div > div > * {
+    margin-bottom: 10px;
+}
+
+div.grid_participantes img {
+    width: 150px;
+    height: 150px;
+    transition: transform .2s;
+}
+
+/*div.grid_participantes img:hover {
+    transform: scale(1.2);
+    filter: grayscale(100%);
+}*/
+
+/*Fin Participantes*/
+
+/*Inicio Patrocinadores*/
+
+div.patrocinadores {
+    background: #272A31;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+div.patrocinadores > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+div.patrocinadores > div > img {
+    height: 150px;
+    filter: grayscale(100%);
+    transition: .2s;
+}
+
+div.patrocinadores > div > img[alt="mozilla"]{
+    height: 75px;
+}
+
+div.patrocinadores > div > img[alt="tokopedia"]{
+    height: 75px;
+}
+
+/*div.patrocinadores > div > img:hover {
+    transform: scale(1.2);
+}*/
+
+/*Fin Patrocinadores*/
+
+/*Inicio Footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2.5%;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer > * {
+    margin: 0 50px;
+}
+
+/*Fin Footer*/

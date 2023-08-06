@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<agenda>
+    <!--vamos a crear un contacto-->
+    <contactos>
+        <nombre>Alumno &lt; 1000 </nombre>
+        <ciudad cp="04008">Almeria</ciudad>
+        <telefono n="650885522" />
+        <email>prueba@gmail.com</email>
+        <casado v="no" />
+    </contactos>
+</agenda>

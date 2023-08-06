@@ -1,0 +1,21 @@
+/* DIV LATERAL*/
+.lateral {
+    width: 200px;
+    border: solid 3px #CCC;
+}
+
+.lateralPorcentaje {
+    width: 20%;
+    border: solid 3px #000;
+}
+
+
+/*FIN DIV LATERAL*/
+
+/** CABECERA**/
+header {
+    height: 60px;
+    border:solid 2px red;
+}
+
+/** FIN CABECERA**/

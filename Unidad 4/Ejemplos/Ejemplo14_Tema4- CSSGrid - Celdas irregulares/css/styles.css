@@ -1,0 +1,34 @@
+.container{
+  display: grid;
+  /*grid-template-columns: 1fr 3fr 2fr;*/
+  grid-template-columns: 19rem 3fr 2fr;
+  grid-template-rows: 9rem 5rem;
+ 
+}
+
+.color-1{
+  background-color: black;
+  color:white;
+}
+
+.color-2{
+  background-color: #FD6057;
+  color:white;
+}
+
+.color-3{
+  background-color: #FF9E62;
+  color:white;
+}
+
+.color-4{
+  background-color: #02A787;
+  color:white;
+}
+
+.color-5{
+  background-color: #1CC1A1;
+  color:white;
+}
+
+

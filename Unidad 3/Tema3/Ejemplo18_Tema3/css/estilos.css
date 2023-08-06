@@ -1,0 +1,24 @@
+@font-face{ 
+    font-family: 'Poor Story';
+    src: url(../fonts/PoorStory-Regular.woff2);
+}
+
+h1 {
+    color: #369;
+    font-family: 'Poor Story', Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: green;
+}
+
+a, span {
+    color: #B1251E;
+}
+
+div {
+    color: rgb(71, 98, 176);
+}
+
+
+    

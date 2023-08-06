@@ -1,0 +1,11 @@
+a{
+  display:block;
+  background-color: blue;
+  color:#FFF
+}
+
+div a{
+     display:inline;
+     background-color: aqua;
+     color:#000;
+}

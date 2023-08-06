@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 140%;
+}
+/*Grid*/
+body.container{
+    height: 100%;
+    font-family: sans-serif;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 150px auto 125px;
+    gap: 15px;
+
+    grid-template-areas: 
+    "head head"
+    "main aside"
+    "foot foot";
+}
+/*Head*/
+header{
+    grid-area: head;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+header>div{
+    display: flex;
+    margin-bottom: .5%;
+}
+header>div>nav{
+    display: flex;
+    padding: 0 2%;
+}
+header>div>nav>a{
+    margin: auto 8%;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #004080;
+}
+header>div>nav>a:hover{
+    color: #FF9500;
+}
+header>div>img{
+    width: 12%;
+    margin-left: 1%;
+}
+hr{
+    border: 3px solid #004080;
+    background: #004080;
+    margin: 0 .3%;
+}
+/*Main*/
+div.main{
+    grid-area: main;
+    background-color: rgb(234, 234, 234);
+    padding: 1%;
+
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "mat ed pro"
+    "mat era era"
+    "qui qui qui"
+    "proca proca proca";
+}
+div>div.mat>a{
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;
+}
+div>div>a{
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    font-size: 1.4em;
+    font-weight: 100;
+}
+div>div>a>img{
+    width: 90px;
+    margin: auto 0;
+}
+div>div>a>img:hover{
+    filter:drop-shadow(0px 0px 20px white);
+}
+div>div{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: center;
+}
+div.mat{
+    grid-area: mat;
+    background: #FF9500;
+    font-size: 2em;
+}
+div.mat>a{
+    margin: auto 0;
+}
+div.mat>a:hover{
+    color: #004080;
+}
+div.ed{
+    grid-area: ed;
+    background: black;
+}
+div.pro{
+    grid-area: pro;
+    background: #FF9500;
+}
+div.era{
+    grid-area: era;
+    background: #004080;
+}
+div.qui{
+    grid-area: qui;
+    background: url(../images/main/ceramica-murales.jpg);
+}
+div.qui>a{
+    font-size: 2em;
+    font-weight: bold;
+}
+div.qui>a:hover{
+    color: #FF9500;
+}
+div.proca{
+    grid-area: proca;
+    background: black;
+}
+/*Aside*/
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside>div{
+    padding: 2% 3%;
+}
+    /*Busquedas*/
+div.search>form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+div.search>form>input{
+    font-size: .8em;
+    margin: 0 1%;
+    height: 40px;
+    border: none;
+}
+div.search>form>input[type="search"]{
+    border-bottom: 5px solid #004080;
+    width: 50%;
+}
+div.search>form>input[type="search"]:focus{
+    border-bottom: 5px solid #FF9500;
+}
+div.search>form>input[type="submit"]{
+    border: 3px solid black;
+    background: #004080;
+    height: 38px;
+    color: white;
+    font-weight: bold;
+    width: 20%;
+}
+div.search>form>input[type="submit"]:hover{
+    color: #FF9500;
+}
+    /*Becas*/
+div.divs{
+    font-size: 1.5em;
+    color: grey;
+}
+div.divs>a>img{
+    width: 100%;
+}
+div.divs>a>img:hover{
+    box-shadow: 10px 10px 10px 0px gray;
+}
+/*Footer*/
+footer{
+    grid-area: foot;
+    display: flex;
+    flex-direction: column;
+}
+footer>hr{
+    border: 3px solid #FF9500;
+    background: #FF9500;
+}
+footer>div{
+    display: flex;
+    justify-content: space-between;
+}
+footer>div>p{
+    margin: auto 1%;
+    font-size: 1.2em;
+    color: gray;
+}
+footer img{
+    height: 75%;
+    margin: 2% 0;
+}
+footer img:hover{
+    height: 75%;
+    margin: 2% 0;
+    filter:drop-shadow(10px 10px 10px gray);
+}
+@media  screen and (max-width:1000px) {
+    body.container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto 150px;
+        grid-template-areas: 
+        "head head"
+        "main main"
+        "foot foot";
+    }
+    aside{
+        display: none;
+    }
+    header{
+        grid-area: head;
+    }
+    header>div>nav{
+        display: flex;
+        flex-direction: column;
+    }
+    div.main{
+        grid-area: main;
+        min-width: 750px;
+    }
+    footer{
+        grid-area: foot;
+    }
+    footer>div>nav{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+}

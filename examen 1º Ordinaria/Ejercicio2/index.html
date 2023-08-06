@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Modelo de cajas</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <h1>Modelo de cajas simulator</h1>
+        <div class="border" id="border">
+            <div class="padding" id="padding">
+                <div class="content" id="content">
+                    &#127856;
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="size">
+                <h2>Border:</h2>
+                <input type="range" id="bor" value="50" min="10" max="100">
+                <h2>Padding:</h2>
+                <input type="range" id="pad" value="50" min="10" max="100">
+                <h2>Content:</h2>
+                <input type="range" id="con" value="50" min="10" max="100">
+            </div>
+            <div class="color">
+                <h2>Border:</h2>
+                <input type="color" id="bor-c">
+                <h2>Padding:</h2>
+                <input type="color" id="pad-c">
+                <h2>Content:</h2>
+                <input type="color" id="con-c">
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
